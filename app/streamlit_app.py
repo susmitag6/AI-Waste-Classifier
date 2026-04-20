@@ -37,8 +37,8 @@ st.markdown("Upload an image to classify waste type using AI")
 uploaded_file = st.file_uploader("📤 Upload an image", type=["jpg", "png", "jpeg"])
 st.sidebar.title("About")
 st.sidebar.info("AI Waste Classification Project") 
-st.info("This app was created by **[Susmita Ghosh]**.")
-st.write("Connect with me on [LinkedIn](g.susmita6@gmail.com)")
+st.sidebar.info("This app was created by **[Susmita Ghosh]**.")
+st.sidebar.write("Connect with me on [LinkedIn](g.susmita6@gmail.com)")
   
 if uploaded_file is not None:
     # Read image
