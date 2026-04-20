@@ -37,7 +37,12 @@ st.markdown("Upload an image to classify waste type using AI")
 uploaded_file = st.file_uploader("📤 Upload an image", type=["jpg", "png", "jpeg"])
 st.sidebar.title("About")
 st.sidebar.info("AI Waste Classification Project") 
-st.sidebar.info("This app was created by **[Susmita Ghosh]**.")
+st.sidebar.info("""
+    <h3 style='color: #FF5733; font-family: sans-serif;'>
+        Created by [Susmita Ghosh]
+    </h3>
+    """, 
+    unsafe_allow_html=True)
 st.sidebar.write("Connect with me on [LinkedIn](g.susmita6@gmail.com)")
   
 if uploaded_file is not None:
