@@ -2,10 +2,26 @@ import streamlit as st
 import numpy as np
 import tensorflow as tf
 import cv2
+import os
+import gdown
+
+# -----------------------------
+# CONFIG
+# -----------------------------
+FILE_ID = "1_qg4fZXCiIsDVc3yQW8aJj1SOtVZXnmi"
+MODEL_PATH = "waste_classifier.h5"
+
+# -----------------------------
+# DOWNLOAD MODEL (RUN ONCE)
+# -----------------------------
+if not os.path.exists(MODEL_PATH):
+    url = f"https://drive.google.com/file/d/1_qg4fZXCiIsDVc3yQW8aJj1SOtVZXnmi/view?usp=drive_link={FILE_ID}"
+    gdown.download(url, MODEL_PATH, quiet=False)
 
 
 # Load model
-model = tf.keras.models.load_model("../models/waste_classifier.h5")
+# model = tf.keras.models.load_model("../models/waste_classifier.h5")
+model = tf.keras.models.load_model(MODEL_PATH)
 
 # Class labels (IMPORTANT)
 class_names = ['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
