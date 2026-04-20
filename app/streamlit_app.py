@@ -40,7 +40,7 @@ st.sidebar.info("AI Waste Classification Project")
 st.sidebar.markdown("""
     <span style='background-color: #4CAF50; color: white; padding: 5px 15px; 
                  border-radius: 15px; font-weight: bold;'>
-        Developed by: [Susmita Ghosh]
+        Developed by: Susmita Ghosh
     </span>
     """, 
     unsafe_allow_html=True)
