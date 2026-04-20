@@ -1,6 +1,6 @@
-streamlit==1.56.0
+streamlit
 tensorflow
-numpy==1.26.4
-protobuf==4.25.9
-opencv-python-headless==4.13.0.92
-gdown==6.0.0
+numpy
+protobuf
+opencv-python-headless
+gdown
