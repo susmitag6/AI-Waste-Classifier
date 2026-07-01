@@ -102,11 +102,11 @@ The goal is to build an AI-based system that can assist in smart waste sorting a
 
 ## 📸 Demo
 🌐 Live Demo
-
 👉 https://your-app-name.streamlit.app
 Example:
 - Upload image → prediction output
 - Model showing waste category
+![Waste Classifier Demo](assets/demo.png)
 
 ---
 
