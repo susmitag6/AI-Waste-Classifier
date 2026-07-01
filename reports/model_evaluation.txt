@@ -1,0 +1,19 @@
+MODEL EVALUATION REPORT
+========================
+
+Accuracy : 0.4100
+Loss     : 2.1191
+Precision: 0.1681
+Recall   : 0.4100
+F1-score : 0.2384
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.41      1.00      0.58       410
+           1       0.00      0.00      0.00       501
+           2       0.00      0.00      0.00        89
+
+    accuracy                           0.41      1000
+   macro avg       0.14      0.33      0.19      1000
+weighted avg       0.17      0.41      0.24      1000
