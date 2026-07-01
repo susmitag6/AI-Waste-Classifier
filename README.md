@@ -89,18 +89,21 @@ The goal is to build an AI-based system that can assist in smart waste sorting a
 ---
 
 ## 🧪 Model Performance
-- Accuracy: XX% (update later)
-- Loss: XX
+#Trained on a limited dataset: 1000 samples)
+# Will improve with 5000 samples
+- Accuracy: 0.4100 
+- Loss: 2.1191
 - Evaluation Metrics:
-  - Precision
-  - Recall
-  - F1-score
+  - Precision : 0.1681
+  - Recall : 0.4100
+  - F1-score : 0.2384
 
 ---
 
 ## 📸 Demo
-(Add screenshots or GIF here)
+🌐 Live Demo
 
+👉 https://your-app-name.streamlit.app
 Example:
 - Upload image → prediction output
 - Model showing waste category
