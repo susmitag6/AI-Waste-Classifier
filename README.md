@@ -102,7 +102,7 @@ The goal is to build an AI-based system that can assist in smart waste sorting a
 
 ## 📸 Demo
 🌐 Live Demo
-👉 https://your-app-name.streamlit.app
+👉 https://ai-waste-classifier-ed8ia2k9rcpppd4mgjx45y.streamlit.app/
 Example:
 - Upload image → prediction output
 - Model showing waste category
@@ -114,5 +114,5 @@ Example:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/waste-classification.git
+git clone https://github.com//susmitag6/AI-Waste-Classifier.git
 # AI-Waste-Classifier
