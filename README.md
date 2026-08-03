@@ -6,13 +6,11 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-red)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-## Problem Statement
+## 📌 Project Overview
 
-Improper waste segregation is a major challenge in urban environments. It leads to inefficient recycling, more landfill usage, and environmental pollution. Manual sorting is labor-intensive, error-prone, and doesn't scale well as populations grow.
+This is a computer vision system that classifies waste images into categories such as plastic, paper, glass, metal, and organic waste. It uses OpenCV for image preprocessing and a Convolutional Neural Network (CNN) for classification.
 
-This project builds an intelligent image classification system using deep learning to automatically sort waste into categories like recyclable, organic, and hazardous. The goal is to support real-time waste segregation, improve recycling efficiency, and reduce environmental impact.
-
-The final solution is a trained convolutional neural network wrapped in a simple web app. Users upload an image and get an instant waste classification prediction.
+The project focuses specifically on the AI component of waste classification, and shows how that component could be integrated into a larger smart waste management system.
 
 **Objective:** Design and deploy an accurate, scalable waste classification system using deep learning for real-world environmental applications.
 
@@ -32,12 +30,6 @@ The trained model could serve as the core intelligence behind automated waste ma
 
 ### 🌱 Environmental Impact
 Better waste segregation accuracy means more efficient recycling, less landfill waste, and stronger support for sustainability efforts overall.
-
-## 📌 Project Overview
-
-This is a computer vision system that classifies waste images into categories such as plastic, paper, glass, metal, and organic waste. It uses OpenCV for image preprocessing and a Convolutional Neural Network (CNN) for classification.
-
-The project focuses specifically on the AI component of waste classification, and shows how that component could be integrated into a larger smart waste management system.
 
 ---
 
@@ -91,12 +83,12 @@ Classes:
 
 Trained on a limited dataset of 1,000 samples. Performance is expected to improve once the dataset grows to around 5,000 samples.
 
-- Accuracy: 0.4100
-- Loss: 2.1191
-- Precision: 0.1681
-- Recall: 0.4100
-- F1-score: 0.2384
-
+- Accuracy: 0.5700
+- Loss: 2.5887
+- Precision: 0.5771
+- Recall: 0.5700
+- F1-score: 0.5720
+![Confusion Matrix](figures/confusion_matrix.png)
 ---
 
 ## 📸 Demo
