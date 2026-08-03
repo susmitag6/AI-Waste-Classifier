@@ -8,7 +8,8 @@ import gdown
 # -----------------------------
 # CONFIG
 # -----------------------------
-FILE_ID = "1yhTjhQJ9KpVhUUr7Ipqhn8TQ9grEXJMl"
+
+FILE_ID = "12wO6J6tCPBmSIT6vNLhWazfhYvDXvlln"
 MODEL_PATH = "waste_model.h5"
 
 # -----------------------------
@@ -23,7 +24,8 @@ if not os.path.exists(MODEL_PATH):
 # -----------------------------
 model = tf.keras.models.load_model(MODEL_PATH)
 
-# Class labels
+# Class labels — must stay alphabetically sorted, since 02_preprocessing.py
+# now builds class_to_index from sorted(os.listdir(...))
 class_names = ['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
 
 # -----------------------------
@@ -55,7 +57,12 @@ if uploaded_file is not None:
 
     # Read image
     file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
-    img = cv2.imdecode(file_bytes, 1)
+    img = cv2.imdecode(file_bytes, 1)  # decodes as BGR
+
+    # cv2.imdecode returns BGR, but the model was trained on RGB images
+    # (02_preprocessing.py does BGR2RGB). Convert here so colors are
+    # correct both on screen and going into the model.
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
     st.image(img, caption="Uploaded Image", use_container_width=True)
 

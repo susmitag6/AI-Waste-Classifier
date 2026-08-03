@@ -13,10 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent
 dataset_path = BASE_DIR / ".." / "dataset" / "raw"
 dataset_path = dataset_path.resolve()
 
-classes = os.listdir(dataset_path)
-
-#dataset_path = "../dataset/raw"
-#classes = sorted(os.listdir(dataset_path))
+classes = sorted(os.listdir(dataset_path))  # sorted so class -> index stays consistent everywhere
 
 class_to_index = {cls: idx for idx, cls in enumerate(classes)}
 print(class_to_index)

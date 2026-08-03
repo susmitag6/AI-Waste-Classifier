@@ -13,17 +13,22 @@ from sklearn.metrics import (
     f1_score
 )
 
+# Must stay alphabetically sorted, since 02_preprocessing.py builds
+# class_to_index from sorted(os.listdir(...))
+CLASS_NAMES = ['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
+
 # -----------------------
 # Load data
 # -----------------------
-data = np.load("data.npy")
-labels = np.load("labels.npy")
+# Use the held-out test split saved by 03_model_training.py, so we're
+# evaluating on data the model never trained on.
+data = np.load("X_test.npy")
+labels = np.load("y_test.npy")
 
-#Limit dataset for testing (debug mode)
-data = data[:1000] #Smaller data sise used to overcome RAM issue
-labels = labels[:1000]
-# Normalize if your model was trained on normalized images
-data = data.astype("float32") / 255.0
+# NOTE: data is already normalized to [0, 1] in 02_preprocessing.py.
+# Do NOT divide by 255 again here — that was a bug that crushed pixel
+# values down to ~0.004, which alone was enough to wreck the metrics.
+data = data.astype("float32")
 
 # -----------------------
 # Load model
@@ -52,7 +57,7 @@ precision = precision_score(labels, y_pred_classes, average="weighted")
 recall = recall_score(labels, y_pred_classes, average="weighted")
 f1 = f1_score(labels, y_pred_classes, average="weighted")
 
-report = classification_report(labels, y_pred_classes)
+report = classification_report(labels, y_pred_classes, target_names=CLASS_NAMES)
 
 # -----------------------
 # Print Summary
@@ -90,10 +95,17 @@ with open("reports/model_evaluation.txt", "w") as f:
 cm = confusion_matrix(labels, y_pred_classes)
 
 plt.figure(figsize=(8, 6))
-sns.heatmap(cm, annot=True, fmt="d", cmap="Blues")
+sns.heatmap(
+    cm, annot=True, fmt="d", cmap="Blues",
+    xticklabels=CLASS_NAMES, yticklabels=CLASS_NAMES
+)
 plt.xlabel("Predicted")
 plt.ylabel("Actual")
 plt.title("Confusion Matrix")
+
+# Small rotation so the class names don't overlap or run into each other
+plt.xticks(rotation=30, ha="right")
+plt.yticks(rotation=0)
 
 # Create figures folder if it doesn't exist
 figures_dir = Path("figures")

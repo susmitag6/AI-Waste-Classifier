@@ -5,9 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent
 dataset_path = BASE_DIR / ".." / "dataset" / "raw"
 dataset_path = dataset_path.resolve()
 
-classes = os.listdir(dataset_path) ## raw, sample, processed
-#dataset_path = "../dataset/raw"
-#classes = os.listdir(dataset_path)  
+classes = sorted(os.listdir(dataset_path))  # sorted so class -> index stays consistent everywhere
 
 print("Classes found:", classes)
 print("Number of classes:", len(classes))
@@ -56,4 +54,6 @@ for i, cls in enumerate(classes):
     plt.imshow(img)
     plt.title(cls)
     plt.axis("off")
-    plt.show()
+
+plt.tight_layout()
+plt.show()
