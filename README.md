@@ -1,111 +1,113 @@
 # ♻️ Waste Classification using Machine Learning & OpenCV
+
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 ![OpenCV](https://img.shields.io/badge/OpenCV-ComputerVision-green)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange)
 ![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-red)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-##Problem Statement**
 
-Improper waste segregation is a major challenge in urban environments, leading to inefficient recycling, increased landfill usage, and environmental pollution. Manual sorting of waste is labor-intensive, error-prone, and not scalable for growing populations.
+## Problem Statement
 
-This project aims to develop an intelligent image classification system using deep learning techniques to automatically categorize waste into distinct classes such as recyclable, organic, and hazardous. The system is designed to assist in real-time waste segregation, improving recycling efficiency and reducing environmental impact.
+Improper waste segregation is a major challenge in urban environments. It leads to inefficient recycling, more landfill usage, and environmental pollution. Manual sorting is labor-intensive, error-prone, and doesn't scale well as populations grow.
 
-The final solution includes a trained convolutional neural network model integrated into a user-friendly web application that allows users to upload images and receive instant waste classification predictions.
+This project builds an intelligent image classification system using deep learning to automatically sort waste into categories like recyclable, organic, and hazardous. The goal is to support real-time waste segregation, improve recycling efficiency, and reduce environmental impact.
 
-##Objective: To design and deploy an accurate and scalable waste classification system using deep learning for real-world environmental applications.
+The final solution is a trained convolutional neural network wrapped in a simple web app. Users upload an image and get an instant waste classification prediction.
 
-**This project demonstrates the application of deep learning in automating waste classification, which can contribute to more efficient waste management systems.
+**Objective:** Design and deploy an accurate, scalable waste classification system using deep learning for real-world environmental applications.
 
-** Real World Application **
+## Real World Applications
+
 ### ♻️ Smart Waste Segregation Assistance
-
-The model can be integrated into applications that help individuals and organizations correctly classify waste items using image input. This reduces human error in manual segregation and promotes better recycling practices.
+The model can plug into apps that help individuals and organizations correctly classify waste items from a photo. This cuts down on human error in manual segregation and encourages better recycling habits.
 
 ### 🏫 Educational and Awareness Tools
+Schools, universities, and public campaigns can use the system to teach proper waste disposal, giving users instant feedback on what category an item falls into.
 
-The system can be used in schools, universities, and public campaigns to educate users about proper waste disposal by providing instant feedback on waste categories.
-
-### 📱 Mobile and Web-Based Solutions
-
-By deploying the model using frameworks like Streamlit, the solution can be accessed through web or mobile interfaces, allowing users to upload images and receive real-time classification results.
+### 📱 Mobile and Web Based Solutions
+Since it's deployed with Streamlit, the model is accessible through a web interface, letting users upload images and get real-time results from a browser.
 
 ### 🤖 Integration with Automated Systems (Future Scope)
-
-The trained model can serve as the core intelligence in automated waste management systems. When combined with cameras and hardware components such as microcontrollers (e.g., Arduino Uno) or single-board computers (e.g., Raspberry Pi 4), it can enable real-time waste sorting in smart bins or recycling facilities.
+The trained model could serve as the core intelligence behind automated waste management systems. Paired with cameras and hardware like an Arduino Uno or a Raspberry Pi 4, it could enable real-time sorting in smart bins or recycling facilities.
 
 ### 🌱 Environmental Impact
-
-By improving waste segregation accuracy, such systems can increase recycling efficiency, reduce landfill waste, and support sustainability initiatives.
+Better waste segregation accuracy means more efficient recycling, less landfill waste, and stronger support for sustainability efforts overall.
 
 ## 📌 Project Overview
-This project is a computer vision system that classifies waste images into categories such as plastic, paper, glass, metal, and organic waste.  
-It uses OpenCV for image preprocessing and a Convolutional Neural Network (CNN) for classification.
 
-The goal is to build an AI-based system that can assist in smart waste sorting and environmental sustainability.
+This is a computer vision system that classifies waste images into categories such as plastic, paper, glass, metal, and organic waste. It uses OpenCV for image preprocessing and a Convolutional Neural Network (CNN) for classification.
 
-**This project focuses on the AI component of waste classification and demonstrates how it can be integrated into larger smart waste management systems.**
+The project focuses specifically on the AI component of waste classification, and shows how that component could be integrated into a larger smart waste management system.
+
 ---
 
 ## 🚀 Features
+
 - Image classification into multiple waste categories
-- OpenCV-based image preprocessing
-- CNN-based deep learning model
-- Real-time prediction on uploaded images
-- Streamlit web app for demo
+- OpenCV based image preprocessing
+- CNN based deep learning model
+- Real time prediction on uploaded images
+- Streamlit web app for a live demo
 
 ---
 
 ## 🧠 Tech Stack
+
 - Python
 - OpenCV
 - TensorFlow / Keras
 - NumPy, Matplotlib
-- Streamlit (for UI)
-
+- Streamlit (for the UI)
 
 ---
 
 ## 📂 Dataset
-- Dataset used: TrashNet / Kaggle Garbage Classification
-- Classes:
-  - Cardboard
-  - Glass
-  - Metal
-  - Paper
-  - Plastic
-  - Trash
+
+Dataset used: TrashNet / Kaggle Garbage Classification
+
+Classes:
+- Cardboard
+- Glass
+- Metal
+- Paper
+- Plastic
+- Trash
 
 ---
 
 ## ⚙️ Project Workflow
-1. Data Collection
-2. Data Preprocessing (OpenCV)
-3. Exploratory Data Analysis (EDA)
-4. Model Building (CNN)
-5. Model Training
-6. Evaluation (Accuracy, Confusion Matrix)
-7. Deployment (Streamlit App)
+
+1. Data collection
+2. Data preprocessing (OpenCV)
+3. Exploratory data analysis (EDA)
+4. Model building (CNN)
+5. Model training
+6. Evaluation (accuracy, confusion matrix)
+7. Deployment (Streamlit app)
 
 ---
 
 ## 🧪 Model Performance
-#Trained on a limited dataset: 1000 samples)
-# Will improve with 5000 samples
-- Accuracy: 0.4100 
+
+Trained on a limited dataset of 1,000 samples. Performance is expected to improve once the dataset grows to around 5,000 samples.
+
+- Accuracy: 0.4100
 - Loss: 2.1191
-- Evaluation Metrics:
-  - Precision : 0.1681
-  - Recall : 0.4100
-  - F1-score : 0.2384
+- Precision: 0.1681
+- Recall: 0.4100
+- F1-score: 0.2384
 
 ---
 
 ## 📸 Demo
-🌐 Live Demo
-👉 https://ai-waste-classifier-ed8ia2k9rcpppd4mgjx45y.streamlit.app/
-Example:
-- Upload image → prediction output
-- Model showing waste category
+
+🌐 **Live Demo:** [ai-waste-classifier-ed8ia2k9rcpppd4mgjx45y.streamlit.app](https://ai-waste-classifier-ed8ia2k9rcpppd4mgjx45y.streamlit.app/)
+
+Example flow:
+1. Upload an image
+2. Model runs a prediction
+3. App displays the predicted waste category
+
 ![Waste Classifier Demo](assets/demo.png)
 
 ---
@@ -114,5 +116,16 @@ Example:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com//susmitag6/AI-Waste-Classifier.git
-# AI-Waste-Classifier
+git clone https://github.com/susmitag6/AI-Waste-Classifier.git
+cd AI-Waste-Classifier
+```
+
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the Streamlit app
+```bash
+streamlit run app/streamlit_app.py
+```
