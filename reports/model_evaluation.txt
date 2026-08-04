@@ -1,19 +1,22 @@
 MODEL EVALUATION REPORT
 ========================
 
-Accuracy : 0.4100
-Loss     : 2.1191
-Precision: 0.1681
-Recall   : 0.4100
-F1-score : 0.2384
+Accuracy : 0.5700
+Loss     : 2.5887
+Precision: 0.5771
+Recall   : 0.5700
+F1-score : 0.5720
 
 Classification Report:
               precision    recall  f1-score   support
 
-           0       0.41      1.00      0.58       410
-           1       0.00      0.00      0.00       501
-           2       0.00      0.00      0.00        89
+   cardboard       0.57      0.62      0.59        48
+       glass       0.53      0.58      0.56        60
+       metal       0.49      0.49      0.49        49
+       paper       0.77      0.66      0.71        70
+     plastic       0.51      0.51      0.51        57
+       trash       0.47      0.44      0.45        16
 
-    accuracy                           0.41      1000
-   macro avg       0.14      0.33      0.19      1000
-weighted avg       0.17      0.41      0.24      1000
+    accuracy                           0.57       300
+   macro avg       0.55      0.55      0.55       300
+weighted avg       0.58      0.57      0.57       300
