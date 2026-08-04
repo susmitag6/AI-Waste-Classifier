@@ -88,6 +88,9 @@ Trained on a limited dataset of 1,000 samples. Performance is expected to improv
 - Precision: 0.5771
 - Recall: 0.5700
 - F1-score: 0.5720
+<p align="center">
+  <img src="figures/confusion_matrix.png" width="600" alt="Confusion Matrix">
+</p>
 ![Confusion Matrix](figures/confusion_matrix.png)
 ---
 
