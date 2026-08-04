@@ -81,7 +81,7 @@ Classes:
 
 ## 🧪 Model Performance
 
-Trained on a limited dataset of 1,000 samples. Performance is expected to improve once the dataset grows to around 5,000 samples.
+<span style="color:darkred"><b>Trained on a limited dataset of 1200 samples due to RAM issues. Performance is expected to improve once the dataset grows to around 5000 samples.</b></span>
 
 - Accuracy: 0.5700
 - Loss: 2.5887
