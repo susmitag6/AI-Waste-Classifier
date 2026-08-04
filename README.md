@@ -96,7 +96,7 @@ Classes:
 
 ## 📸 Demo
 
-🌐 **Live Demo:** [ai-waste-classifier-ed8ia2k9rcpppd4mgjx45y.streamlit.app](https://ai-waste-classifier-ed8ia2k9rcpppd4mgjx45y.streamlit.app/)
+🌐 **Live Demo:** [ai-waste-classifier-ellwdpfp8byvhmknqsauam.streamlit.app/](https://ai-waste-classifier-ellwdpfp8byvhmknqsauam.streamlit.app//)
 
 Example flow:
 1. Upload an image
