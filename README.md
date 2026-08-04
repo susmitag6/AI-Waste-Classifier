@@ -81,7 +81,7 @@ Classes:
 
 ## 🧪 Model Performance
 
-**⚠️ Note:** > **Note:** Due to hardware memory limitations, the model was initially trained on a subset of 1200 samples. Increasing the dataset size to approximately 5000 samples is expected to further improve performance.**
+**⚠️ Note:** > Due to hardware memory limitations, the model was initially trained on a subset of 1200 samples. Increasing the dataset size to approximately 5000 samples is expected to further improve performance.**
 
 - Accuracy: 0.5700
 - Loss: 2.5887
