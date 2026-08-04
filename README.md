@@ -96,7 +96,11 @@ Classes:
 
 ## 📸 Demo
 
+<<<<<<< Updated upstream
 🌐 **Live Demo:** [ai-waste-classifier-ellwdpfp8byvhmknqsauam.streamlit.app/](https://ai-waste-classifier-ellwdpfp8byvhmknqsauam.streamlit.app//)
+=======
+🌐 **Live Demo:** [ai-waste-classifier-ellwdpfp8byvhmknqsauam.streamlit.app](https://ai-waste-classifier-ellwdpfp8byvhmknqsauam.streamlit.app//)
+>>>>>>> Stashed changes
 
 Example flow:
 1. Upload an image
